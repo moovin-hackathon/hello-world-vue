@@ -1,0 +1,14 @@
+language: node_js
+sudo: false
+node_js:
+- '8.9'
+install:
+- npm install
+script:
+- npm run build
+deploy:
+  provider: heroku
+  api_key:
+    secure: carQxQ0d/WuLvfY95fksOUwvRcf6jhGooSPSHYEGAVlqNeVZbCK+NRas9KiPMXB3QbACwYIUS2etovsXNM3nUrfeeyUkiI1qCj/f4ZcAQylAbzM/+3GftOhUsYjEBzASLwEaNjtTPyOa7JwP3DYKdd4FUbvx5Kgh2c3m9sidu5fiij2+2THDq8krBxiddJGxl12KNwIZ5p6bA05LDjvt+gv3qIo4nj9b83gaLvmyXBp+U1UE1wZX9wWF9TWeDho63zuxnSzxjrLGmaW9nNPct1izCb/zerK2vozjNdyK6021HterzERy7JOHAkzTcraHirNP0ZwC1RvAJfxX0eOWnXZIojasF7c4HCXmj6ZGI5hJDa9JKPoQNAS6wJsMzcDT0co/VZlQsi4OgR5ZzZ/lR+IiesdiTmw2cyAv4P5lmWYHtjqrmmDK1zbFpcN88ZV3LHk5gD6MoGEJRM7CqthAOrpYoBaIZt4UInIh6bE2OXP3vjzKqZ9dkKMBkQsAF+FFzslv5HGT1XqsYB1nBdbgL00JI6oXoSMXHMi4j4w2AT7xTdbknYMS8/uh+g2sGAl7pFpvXIhUSZwv4ln22Bm1pWF2X8j0kTCS8yYVgzaIzjYvq0Tor/SQP0WRjxyM9779bqVPX0wTBPBQKnumjCRYnBTwilgaAt9XNC9mRIKZqQI=
+  app:
+    master: moovin-hackathon-hw-vue
